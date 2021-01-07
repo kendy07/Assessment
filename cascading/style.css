@@ -1,0 +1,302 @@
+body{
+	background-color:#f1f1f1;
+    margin:0;
+	padding:0;
+	height: 100%;
+	width: 100%;
+	color:white;
+
+}
+
+.container{
+	position:relative;
+	height: 120vh;
+	width: 100%;
+	background-image: url(../images/image3.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	transition: 5s;
+	padding:0;
+	
+	animation-name: animate;
+	animation-direction: alternate-reverse;
+	animation-duration:30s ;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-play-state:running;
+	animation-timing-function:ease-in-out;
+	
+}
+@keyframes animate{
+	0%{
+		background: url(../images/images.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;;
+	}20%{
+		background: url(../images/images4.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	}40%{
+		background: url(../images/images2.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	}60%{
+		background: url(../images/images5.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	}
+	80%{
+		background: url(../images/images6.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	}
+	100%{
+		background: url(../images/images7.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	}
+	
+}
+
+*{
+	
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.toggle{
+	position:relative;
+	font-size: 30px;
+	color: #ffffff;
+	float: left;
+	line-height: 45px;
+	margin-left: 5%;
+	cursor: pointer;
+	display: none;
+}
+nav{
+	position:relative;
+	height: 80px;
+	width: 100%;
+
+}
+ul{
+	padding: 14px 15px;
+	float: left;
+	margin-left: 5%;
+}
+.socialtop{
+	position:relative;
+	float: right;
+	margin-right: 5%;
+}
+ul li{
+	
+	margin:0;
+	padding:0;
+	position: relative;
+	display: inline-block;
+}
+ul li a{
+	
+	font-size:12px;
+	font-weight: 400px;
+	line-height: 45px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+	
+}	
+ul li:first-child{
+	color:white;
+
+}
+ul li:hover{
+	background-color: #FF0000;
+	
+}
+.top-social{
+	position:relative;
+	color: white;
+	padding: 12px 12px;
+	border-bottom-color:#f1f1f1;
+	padding-top: 10px;
+}
+.socialtop{
+	position:relative;
+	padding-top:10px;
+}
+.top-social a{
+	padding: 13px;
+	color: white;
+	
+}
+.top-social a:hover{
+	color: #FF0000;
+}
+.canvas{
+	position:relative;
+	top:0;
+	float:left;
+	margin-right:270px;	
+}
+.navigation2{
+	position:relative;
+	padding-top: 80px;
+	color:white;
+	float:right;
+	margin-left:10px;	
+		
+}
+
+
+.tab {
+	height:100%;
+	position:relative;
+	left:105px; top:100px;
+  width: 39%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: gray;
+   border-bottom:1px solid red;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	color:white;
+  background-color: inherit;
+  float: center-right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  left:105px; top:200px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+	color:black;
+	background-color:white;
+	position:relative;
+	  top:70px;
+	  left:117px;
+	  width:640px;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top:2px solid red;
+ 
+}
+.padding-table-columns th,td{
+	color:black;
+    padding:0 15px;
+
+}
+input[type=text]{
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.advanced{
+	top:200px;
+	float:right;
+	color:red;
+}
+input[type=submit] {
+  
+  background-color:red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.fm{
+	
+	color: white;
+}
+.shape{
+  border: solid 1px white;
+  width: 20px;
+  height: 20px;
+}
+.choose{
+	position:relative;
+	float:right;
+	
+}
+.w3-btn.w3-black{
+
+	  background-color:red;
+  color: white;
+  padding-right:5px;
+  padding: 10px 0px;
+  margin: 8px 0;
+  border: none;
+  
+  cursor: pointer;
+}
+.w3-btn.w3-teal{
+	
+	  background-color:white;
+  color: black;
+  padding: 10px 0px;
+  margin: 8px 0;
+  border: 1px;
+  
+  cursor: pointer;
+}
+.heading{
+	position:relative;
+	padding-top:40px;
+}
+.save{
+	padding: 2px 2px;
+	 text-align: left;
+}
+.mk input[type=text]{
+	border:none;
+	background-color:red;
+	color:white;
+	font-size:7px;
+	height:12px;
+	
+
+}
+.mk{
+	border:none;
+	background-color:red;
+	
+	background-color:red;
+	color:white;
+	font-size:7px;
+	height:5px;
+	
+}
