@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+				<!--titling the website-->
+		<title>CIB Digital Tech – Front End Assessment </title>
+		<!--connecting to CSS-->
+		<link href="cascading\style.css" rel="stylesheet" type="text/css"/>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--connecting to online style for social media icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+	<body>
+	<div class="container">
+	<nav>
+		<label class="toggle">
+			<i class="fa fa-bars"></i>
+		</label>
+		<!--creating navigation bar-->
+	<div class="top-social">
+		<ul>
+			<i><a href="index.html" >HOME</a></i>
+			<i><a href="faqs.html">FAQS</a></i>
+			<i><a href="contact.html">CONTACT</a></i>
+			<i><a href="#"><select class="currency"><option value="USD">USD</option></select></a></i>			
+		</ul>
+				<!--creating secondary navigation bar-->
+		<div class="socialtop">
+						<!--inserting social media icons on secondary navigation bar-->
+				<a href="#"><i class="fa fa-facebook"></i><a/>
+				<a href="#"><i class="fa fa-twitter"></i><a/>
+				<a href="#"><i class="fa fa-pinterest"></i><a/>
+				<a href="#"><i class="fa fa-instagram"></i><a/>
+				<a href="#"><i class="fa fa-phone"></i><a/>
+				<a href="#"><i class="fa fa-envelope"></i><a/>					
+		</div>
+			<div class="navigation2">
+				<div class="canvas">
+					<h1>CANVAS</h1>
+					<!--secondary navigation bar-->
+				</div>
+				<a href="index.html"><i class="fa fa-home"> HOME</i><a/>
+				<a href="flight.html"><i class="fa fa-plane"> FLIGHTS</i><a/>
+				<a href="hotel.html"><i class="fa fa-building"> HOTELS</i><a/>
+				<a href="holiday.html"><i class="fa fa-gift"> HOLIDAYS</i><a/>
+				<a href="block.html"><i class="fa fa-pencil"> BLOG</i><a/>
+				<a href="#"><i class="fa fa-phone"> 1800 105 2541</i><a/>		
+			</div>		
+		
+	<div class="info">
+		<center><p><h1>FAQS</h1></p></center>
+		
+		</div>
+</div>
+
+	<!--creating a placeholder for hotel bookings under tabs-->
+<div id="Hotels" class="tabcontent">
+  <h1>BOOK YOUR HOTELS</h1>
+</div>
+<!--creating a placeholder for flight + hotel bookings under tabs-->
+<div id="Flight + Hotels" class="tabcontent">
+  <h1>BOOK YOUR FLIGHTS + HOTELS</h1>
+</div>
+<!--creating a placeholder for holiday bookings under tabs-->
+<div id="Holidays" class="tabcontent">
+  <h1>BOOK YOUR HOLIDAYS</h1>
+</div>
+	</nav>
+<!--code for tabs to display information when cliked-->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+	</div>
+</body>
+</html>
